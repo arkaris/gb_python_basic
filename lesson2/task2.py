@@ -10,7 +10,7 @@ def calc_even(number):
 	else:
 		even, odd = 0, 0
 
-	if is_even(number % 10):
+	if is_even(number%10):
 		even += 1
 	else:
 		odd += 1
@@ -18,9 +18,6 @@ def calc_even(number):
 	return even, odd
 
 def is_even(number):
-	if number % 2 == 0:
-		return True
-	else:
-		return False
+	return number % 2 == 0
 
 main()
