@@ -28,11 +28,9 @@ while len(tmp) > 0:
 	# print(result)
 	# print(tmp)
 
-# print("*"*10)
-# print(tmp)
-# print(result)
-
-if len(result) == 1:
+if len(result) == len(arr):
+	print("Все элементы массива встречаются по 1 разу")
+elif len(result) == 1:
 	print("В исходном массиве чаще всего встречается элемент ", result[0])
 else:
 	print("В исходном массиве чаще всего встречаются элементы ", ", ".join(map(str, result)))
