@@ -1,3 +1,4 @@
+from random import randint
 arr1 = [randint(1,21) for _ in range(10)]
 print("Исходный массив: ", arr1)
 
