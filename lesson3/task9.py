@@ -10,5 +10,14 @@ def print_matrix(matrix):
 print("Исходная матрица")
 print_matrix(matrix)
 
-result = max([min(row) for row in matrix])
+# result = max([min(row) for row in matrix])
+
+min_row = [None]*4
+for row in matrix:
+	for column, cell in enumerate(row):
+		if min_row[column] is None or cell < min_row[column]:
+			min_row[column] = cell
+
+result = max(min_row)
+
 print("Максимальное из минимальных по столбцам", result)
