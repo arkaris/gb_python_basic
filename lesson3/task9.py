@@ -1,3 +1,5 @@
+# Найти максимальный элемент среди минимальных элементов столбцов матрицы.
+
 from random import randint
 matrix = [[randint(-5, 5) for j in range(4)] for i in range(4)]
 

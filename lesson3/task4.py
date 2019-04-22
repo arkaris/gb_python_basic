@@ -1,3 +1,5 @@
+# Определить, какое число в массиве встречается чаще всего.
+
 from random import randint
 arr = [randint(0, 1) for _ in range(4)]
 print("Исходный массив: ", arr)
