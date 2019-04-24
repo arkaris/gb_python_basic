@@ -27,5 +27,5 @@ def merge_sort(arr):
 				i += 1
 		return arr3
 
-arr = [random.randint(-100, 99) for _ in range(10)]
+arr = [random.uniform(-100, 99) for _ in range(10)]
 print(merge_sort(arr))
